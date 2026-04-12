@@ -2,7 +2,7 @@ import React from 'react'
 import "../styles/hero.css"
 import img1 from "../assets/img1.png"
 import img3 from "../assets/img3.png"
-import logo from "../assets/TailorGo scissor logo design.png"
+
 function Hero() {
     return (
         <>
