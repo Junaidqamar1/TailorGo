@@ -1,0 +1,124 @@
+
+.navbar {
+  /* position: fixed; */
+  background-color: var(--bg-beige);
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* Transparent start for that premium feel */
+  /* background: transparent;  */
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-bottom: 1px solid transparent;
+  padding: 1.5rem 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar.scrolled {
+  background: rgba(245, 242, 237, 0.85); 
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+
+.nav-container {
+  max-width: 1400px; 
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+
+.logo-text {
+/* color:rgb(34, 44,84) !important; */
+  font-family:var(--font-heading); 
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-obsidian);
+  letter-spacing: -1.5px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-text span {
+  background: linear-gradient(135deg, var(--tortoise-accent), var(--tortoise-glow));
+  /* transform: ; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 2px;
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+
+.nav-links a {
+  font-family: 'Urbanist', sans-serif;
+  text-decoration: none;
+  color: var(--nav-link);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--tortoise-glow);
+}
+
+/* Buttons */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.btn-secondary {
+  font-family: 'Lexend', sans-serif;
+  text-decoration: none;
+  color: var(--text-obsidian);
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1.5px solid var(--text-obsidian);
+  padding: 0.6rem 1.4rem;
+  border-radius: 50px; /* Modern pill shape */
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: var(--tortoise-glow);
+  color: var(--bg-beige);
+}
+
+.btn-primary {
+  font-family: 'Lexend', sans-serif;
+  text-decoration: none;
+  background: var(--text-obsidian); /* Black button pops on Beige */
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.75rem 1.8rem;
+  border-radius: 50px; /* Modern pill shape */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: var(--tortoise-glow);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(99, 15, 6, 0.2);
+}
+
+
+.logo img{
+    width: 220px;
+    height: 100px;
+    object-fit: cover;
+}

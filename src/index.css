@@ -1,0 +1,25 @@
+:root {
+  /* Brand Colors */
+  /* --bg-beige: #F5F2ED; */
+  /* --bg-beige: #f5e7d0; */
+ 
+  --bg-beige: rgb(240, 240, 240);
+  --text-obsidian: #1A1A1A;
+  /* --tortoise-accent: #630F06; */
+  --tortoise-accent: rgb(20, 34,78);
+  /* --tortoise-accent: #; */
+  /* --tortoise-glow: #C24C21; */
+  --tortoise-glow:  rgb(120, 170,230);
+  --text-muted: #555555;
+
+  /* Global Font Assignments */
+  --font-heading: 'Syne', sans-serif;      /* Wide, Modern, Gen-Z */
+  --font-body: 'Urbanist', sans-serif;     /* Clean, Geometric, Premium */
+  --font-accent: 'Fraunces', serif;        /* Luxury Serif, Italicized */
+  --font-action: 'Lexend', sans-serif;     /* Functional, readable buttons */
+  --premium-glow: radial-gradient(circle, rgba(230, 219, 192, 0.4) 0%, transparent 70%);
+}
+*{
+  padding: 0;
+  margin: 0;
+}

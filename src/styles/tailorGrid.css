@@ -1,0 +1,112 @@
+.tailor-grid {
+  padding: 120px 0;
+  background-color: var(--bg-beige);
+}
+
+.section-intro {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+/* THE GRID: Staggered Layout */
+.editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  padding: 0 4rem;
+}
+
+/* Make every second item sit lower for that 'Gallery' look */
+.tailor-item:nth-child(even) {
+  margin-top: 60px;
+}
+
+/* THE IMAGE: Hard Edges + Overlays */
+.image-wrapper {
+  position: relative;
+  height: 450px;
+  background: var(--text-obsidian);
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /* Editorial diagonal cut */
+  transition: all 0.5s ease;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(20%); /* High-fashion look */
+  transition: 0.8s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.tailor-item:hover .image-wrapper img {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+.floating-tag {
+  position: absolute;
+  bottom: 30px;
+  left: -10px;
+  background: var(--tortoise-glow);
+  color: white;
+  padding: 8px 20px;
+  transform: rotate(-90deg); /* Vertical text like a tag */
+  transform-origin: left bottom;
+  font-size: 0.7rem;
+}
+
+/* DETAILS: Minimalist & Wide */
+.item-details {
+  padding: 2rem 0;
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 0.5rem;
+}
+
+.tailor-item .text4 {
+  font-size: 1.8rem;
+  color: var(--text-obsidian);
+}
+
+.tailor-item .text3 {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* THE BUTTON: The 'Modern App' Look */
+.editorial-btn {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  group: hover;
+}
+
+.btn-circle {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--text-obsidian);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.editorial-btn:hover .btn-circle {
+  background: var(--text-obsidian);
+  color: white;
+  transform: translateX(10px);
+}
