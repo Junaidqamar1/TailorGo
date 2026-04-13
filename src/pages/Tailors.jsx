@@ -2,9 +2,9 @@ import React from 'react';
 import '../styles/tailors.css';
 
 const tailors = [
-  { id: 1, name: "Master Ibrahim", exp: "22 Yrs Exp", rating: "4.9", tags: ["Sherwani", "Suits"], img: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=400" },
-  { id: 2, name: "Master Savita", exp: "15 Yrs Exp", rating: "4.8", tags: ["Lehenga", "Blouse"], img: "https://images.unsplash.com/photo-1621184414184-0155f0ce1447?q=80&w=400" },
-  { id: 3, name: "Master Rahil", exp: "12 Yrs Exp", rating: "5.0", tags: ["Kurta", "Pathani"], img: "https://images.unsplash.com/photo-1617137968427-83c394297940?q=80&w=400" },
+  { id: 1, name: "Master Ibrahim", exp: "22 Yrs Exp", rating: "4.9", tags: ["Sherwani", "Suits"], img: "https://plus.unsplash.com/premium_photo-1683140721927-aaed410fae29?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 2, name: "Master Savita", exp: "15 Yrs Exp", rating: "4.8", tags: ["Lehenga", "Blouse"], img: "https://plus.unsplash.com/premium_photo-1683129663272-6a157e9c493c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 3, name: "Master Rahil", exp: "12 Yrs Exp", rating: "5.0", tags: ["Kurta", "Pathani"], img: "https://plus.unsplash.com/premium_photo-1663047237571-fec4456a40a2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
 ];
 
 function TailorSection() {
