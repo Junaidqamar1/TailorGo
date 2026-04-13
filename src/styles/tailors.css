@@ -1,5 +1,5 @@
 .tailor-wrapper {
-  padding: 120px 2rem;
+  padding: 50px 2rem;
   background-color: var(--bg-beige);
   background-image: radial-gradient(circle at 50% 50%, rgba(194, 76, 33, 0.03) 0%, transparent 80%);
   display: flex;
