@@ -258,3 +258,169 @@
     width: 400px;
     
 }
+
+/* ================= TABLET ================= */
+@media (max-width: 1024px) {
+
+  .hero-container {
+    padding: 0 2rem;
+  }
+
+  .head-text {
+    font-size: 3.5rem;
+  }
+
+  .text3 {
+    font-size: 1rem;
+  }
+
+  .action-bar {
+    width: 90%;
+  }
+
+  .bg-img img {
+    width: 150px;
+  }
+
+  .bg-img2 img {
+    width: 300px;
+  }
+
+  .glass-sphere {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .hero {
+    padding-top: 80px;
+    min-height: auto;
+  }
+
+  .hero-container {
+    padding: 0 1.5rem;
+  }
+
+  .hero-content {
+    gap: 1rem;
+  }
+
+  .head-text {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .text2 {
+    font-size: 1.2rem;
+  }
+
+  .text3 {
+    font-size: 0.95rem;
+  }
+
+  /* STACK INPUT BAR */
+  .action-bar {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 20px;
+    padding: 1rem;
+    gap: 10px;
+  }
+
+  .input-group {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .btn-primary-hero {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  /* HIDE HEAVY DECORATIONS */
+  .glass-sphere {
+    display: none;
+  }
+
+  .hero::before,
+  .hero::after {
+    display: none;
+  }
+
+  /* BACKGROUND IMAGES ADJUST */
+  .bg-img {
+    right: -40px;
+    top: 20px;
+  }
+
+  .bg-img img {
+    width: 120px;
+    opacity: 0.5;
+  }
+
+  .bg-img2 {
+    left: -80px;
+    bottom: -30px;
+  }
+
+  .bg-img2 img {
+    width: 220px;
+    opacity: 0.5;
+  }
+
+  .hero-trust-line {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+}
+
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 480px) {
+ .hero{
+  padding-top: 25px;
+ }
+  .head-text {
+    font-size: 2rem;
+  }
+
+  .text2 {
+    font-size: 1rem;
+  }
+
+  .text3 {
+    font-size: 12px !important;
+    word-wrap: no-wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+ .text3 .creative-badge{
+  font-size: 12px;
+  padding: 2px 4px;
+ }
+ .text3 .creative-now{
+  font-size: 12px;
+
+ }
+  .creative-price {
+    font-size: 12px;
+  }
+
+  .action-bar {
+    padding: 0.8rem;
+    width: 200px;
+    margin-top: 0px;
+  }
+    .bg-img2 {
+      bottom: 170px;
+    }
+}
