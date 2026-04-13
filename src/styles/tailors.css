@@ -100,7 +100,7 @@
   align-items: center;
   margin-bottom: 1rem;
 }
-.card-title-row h3 {
+/* .card-title-row h3 {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -118,7 +118,7 @@
   background-size: contain;
 
   flex-shrink: 0;
-}
+} */
 .master-card {
   position: relative;
   overflow: visible;
