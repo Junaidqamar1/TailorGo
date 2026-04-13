@@ -1,46 +1,50 @@
 import React from 'react';
-import '../styles/tailorGrid.css';
+import '../styles/tailors.css';
 
 const tailors = [
-  { id: 1, name: "Master Rajesh Kumar", specialty: "Sherwani & Wedding Expert", rating: "4.9", orders: "520+", image: "https://images.unsplash.com/photo-1555529771-835f59fc5efe?auto=format&fit=crop&q=80&w=400" },
-  { id: 2, name: "Saira Bano", specialty: "Blouse & Boutique Specialist", rating: "4.8", orders: "310+", image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=400" },
-  { id: 3, name: "Arjun Singh", specialty: "Suits & Formal Wear", rating: "5.0", orders: "180+", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400" }
+  { id: 1, name: "Master Ibrahim", exp: "22 Yrs Exp", rating: "4.9", tags: ["Sherwani", "Suits"], img: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=400" },
+  { id: 2, name: "Master Savita", exp: "15 Yrs Exp", rating: "4.8", tags: ["Lehenga", "Blouse"], img: "https://images.unsplash.com/photo-1621184414184-0155f0ce1447?q=80&w=400" },
+  { id: 3, name: "Master Rahil", exp: "12 Yrs Exp", rating: "5.0", tags: ["Kurta", "Pathani"], img: "https://images.unsplash.com/photo-1617137968427-83c394297940?q=80&w=400" },
 ];
 
-function TailorGrid() {
+function TailorSection() {
   return (
-<section className="tailor-grid glow-bg">
-  <div className="max-w">
-    <div className="section-intro">
-      <h2 className="text2">Curated Artisans</h2>
-      <h1 className="text1">Verified <span className="text-capsule">Masters.</span></h1>
-    </div>
+    <section className="tailor-wrapper max-w">
+      <div className="tailor-header">
+        <h2 className="text2">Curated for you</h2>
+        <h1 className="text1">Master Tailors <span className="text-capsule-blue">Nearby</span></h1>
+      </div>
 
-    <div className="editorial-grid">
-      {tailors.map((tailor, index) => (
-        <div key={tailor.id} className={`tailor-item item-${index}`}>
-          <div className="image-wrapper">
-            <img src={tailor.image} alt={tailor.name} />
-            <div className="floating-tag text5">Top Rated</div>
-          </div>
-          
-          <div className="item-details">
-            <div className="details-header">
-              <h3 className="text4">{tailor.name}</h3>
-              <span className="text6">★ {tailor.rating}</span>
+      <div className="tailor-grid">
+        {tailors.map(t => (
+          <div key={t.id} className="master-card">
+            <div className="card-top">
+              <img src={t.img} alt={t.name} className="master-img" />
+              <div className="card-overlay">
+                <span className="badge-exp text6">{t.exp}</span>
+              </div>
             </div>
-            <p className="text3">{tailor.specialty}</p>
-            <button className="editorial-btn">
-               <span className="text5">Book Visit</span>
-               <div className="btn-circle">→</div>
-            </button>
+            
+            <div className="card-body">
+              <div className="card-title-row">
+                <h3 className="text4">{t.name}</h3>
+                <div className="rating-tag"><span className="star">✦</span> {t.rating}</div>
+              </div>
+              
+              <div className="tag-container">
+                {t.tags.map(tag => <span key={tag} className="skill-tag text6">{tag}</span>)}
+              </div>
+
+              <button className="book-btn">
+                <span className="text5">Book Appointment</span>
+                <div className="btn-icon">→</div>
+              </button>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
+        ))}
+      </div>
+    </section>
   );
 }
 
-export default TailorGrid;
+export default TailorSection;

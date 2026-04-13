@@ -1,0 +1,148 @@
+.tailor-wrapper {
+  padding: 100px 2rem;
+  /* max-width: 1440px; */
+  align-self: center;
+  background-color: var(--bg-beige);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.tailor-header {
+  text-align: center;
+  /* margin-bottom: 5rem; */
+
+}
+
+.text-capsule-blue {
+  color: var(--white);
+  background: linear-gradient(90deg, var(--tortoise-accent), var(--tortoise-glow)); 
+  padding: 0 1.5rem;
+  border-radius: 100px;
+  display: inline-block;
+}
+
+.tailor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 5rem;
+  max-width: 1440px;
+}
+
+/* THE CARD */
+.master-card {
+  background: var(--bg-beige);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 40px; /* Matching the Hero Search bar roundness */
+  padding: 1rem;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+.master-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.08);
+  border-color: var(--tortoise-glow);
+}
+
+.card-top {
+  position: relative;
+  height: 300px;
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.master-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.master-card:hover .master-img {
+  transform: scale(1.1);
+}
+
+.badge-exp {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: var(--text-obsidian);
+}
+
+.card-body {
+  padding: 1.5rem 1rem 1rem 1rem;
+}
+
+.card-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.rating-tag {
+  font-family: var(--font-heading);
+  background: #F5F2ED;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.star { color: var(--tortoise-glow); }
+
+.tag-container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 2rem;
+}
+
+.skill-tag {
+  border: 1px solid var(--tortoise-accent);
+  background-color: var(--tortoise-glow);
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  /* color: #777; */
+  color: #000;
+}
+
+
+.book-btn {
+  width: 100%;
+  background: var(--text-obsidian);
+  color: white;
+  border-radius: 100px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border: none;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background: var(--tortoise-glow);
+  box-shadow: 0 15px 30px rgba(99, 15, 6, 0.3);
+}
+
+.btn-icon {
+  width: 24px;
+  height: 24px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
