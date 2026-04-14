@@ -293,7 +293,7 @@
 }
 
 
-/* ================= MOBILE ================= */
+
 @media (max-width: 768px) {
 
   .hero {
@@ -322,7 +322,6 @@
     font-size: 0.95rem;
   }
 
-  /* STACK INPUT BAR */
   .action-bar {
     flex-direction: column;
     width: 100%;
@@ -345,7 +344,7 @@
     padding: 1rem;
   }
 
-  /* HIDE HEAVY DECORATIONS */
+
   .glass-sphere {
     display: none;
   }

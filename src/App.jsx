@@ -9,6 +9,7 @@ import Hero from './pages/Hero'
 // import TailorGrid from './pages/Tailors'
 import TailorSection from './pages/Tailors'
 import Footer from './pages/Footer'
+import HIW from './pages/HIW'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
     <div className="container">
     <Nav/>
     <Hero/>
+    <HIW/>
     <TailorSection/>
     <Footer/>
     </div>
