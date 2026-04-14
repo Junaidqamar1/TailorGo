@@ -6,8 +6,8 @@ function HIW() {
     <section className="hiw">
       <div className="hiw-container">
 
-        <p className="section-tag">Simple Process</p>
-        <h2 className="section-title">How It Works</h2>
+        <h2 className="text2">Simple Process</h2>
+        <h2 className="text1">HOW IT <span className="text-capsule-blue">Works</span></h2>
 
         <div className="stack">
 
@@ -22,8 +22,8 @@ function HIW() {
           <div className="card card-2">
             <div className="card-inner">
               <span className="step-no">02</span>
-              <h3>Get Offers</h3>
-              <p>Nearby tailors send quotes, pricing & timelines.</p>
+              <h3>Get Tailor Offers</h3>
+              <p>Nearby tailors send pricing, timelines & details.</p>
             </div>
           </div>
 
@@ -31,7 +31,7 @@ function HIW() {
             <div className="card-inner">
               <span className="step-no">03</span>
               <h3>Choose & Relax</h3>
-              <p>Pick the best tailor and enjoy doorstep service.</p>
+              <p>Select the best tailor and enjoy doorstep service.</p>
             </div>
           </div>
 
