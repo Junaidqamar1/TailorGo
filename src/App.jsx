@@ -10,6 +10,7 @@ import Hero from './pages/Hero'
 import TailorSection from './pages/Tailors'
 import Footer from './pages/Footer'
 import HIW from './pages/HIW'
+import Trust from './pages/Trust'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +22,7 @@ function App() {
     <Hero/>
     <HIW/>
     <TailorSection/>
+    <Trust/>
     <Footer/>
     </div>
     </>
