@@ -13,11 +13,10 @@ function Trust() {
 
         <div className="trust-grid">
 
-          {/* LEFT SIDE */}
           <div className="trust-left">
-            <h2 className="text2">Why Choose Us</h2>
+            <h2 className="text2 f-22">Why Choose Us</h2>
 
-     <h1 className="text1"> Tailoring, <span className="text-capsule-blue">Reimagined</span></h1>
+     <h3 className="text1 f-28"> Tailoring, <span className="text-capsule-blue">Reimagined</span></h3>
 
             <p className="trust-desc">
               We connect you with skilled local tailors, simplify the process,

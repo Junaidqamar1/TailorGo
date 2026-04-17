@@ -1,5 +1,5 @@
 .hero {
-  min-height: 90vh;
+  /* min-height: 90vh; */
   display: flex;
   /* align-items: center; */
   justify-content: center;
@@ -421,5 +421,8 @@
   }
     .bg-img2 {
       bottom: 170px;
+    }
+    .input-group .icon{
+      display: none;
     }
 }

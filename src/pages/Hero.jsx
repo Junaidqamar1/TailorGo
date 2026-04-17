@@ -16,7 +16,7 @@ function Hero() {
                 </div>
                 <div class="hero-container">
                     <div class="hero-content">
-                        <h2 class="text2">The Modern Atelier</h2>
+                        <p class="text2 f-22">The Modern Atelier</p>
                         <h1 class="head-text">
   Master Tailors. <br />
   At Your <span class="text-capsule">Doorstep.</span>

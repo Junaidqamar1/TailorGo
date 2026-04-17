@@ -23,3 +23,17 @@
   padding: 0;
   margin: 0;
 }
+.f-28{
+  font-size: 28px
+}
+.f-22{
+  font-size: 28px
+}
+@media (max-width: 768px) {
+  .f-28{
+  font-size: 14px !important;
+}
+.f-22{
+  font-size: 12px;
+}
+}

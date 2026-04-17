@@ -10,8 +10,8 @@ function HIW() {
     <section className="hiw">
       <div className="hiw-container">
 
-        <h2 className="text2">Simple Process</h2>
-        <h2 className="text1">HOW IT <span className="text-capsule-blue">Works</span></h2>
+        <h2 className="text2 f-22">Simple Process</h2>
+        <h3 className="text1 f-28">HOW IT <span className="text-capsule-blue">Works</span></h3>
 
         <div className="stack">
 

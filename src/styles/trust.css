@@ -1,5 +1,5 @@
 .trust {
-  padding: 120px 2rem;
+  padding: 40px 2rem;
   background: var(--bg-beige);
 }
 
@@ -115,19 +115,33 @@ border-radius: 100%;
 }
 
 @media (max-width: 768px) {
+  .trust{
+    padding: 20px 10px;
+  }
   .trust-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 20px;
   }
 
   .trust-left {
     text-align: center;
     margin: auto;
   }
-
+.trust-desc{
+  font-size: 16px;
+}
+.trust-right{
+  padding: 0px 20px;
+}
   .trust-card,
   .trust-card:nth-child(2),
   .trust-card:nth-child(4) {
     transform: none;
+  }
+  .trust-card h3{
+    font-size: 18px;
+  }
+  .trust-card p{
+    font-size: 14px;
   }
 }

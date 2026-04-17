@@ -11,8 +11,8 @@ function TailorSection() {
   return (
     <section className="tailor-wrapper max-w">
       <div className="tailor-header">
-        <h2 className="text2">Curated for you</h2>
-        <h1 className="text1">Master Tailors <span className="text-capsule-blue">Nearby</span></h1>
+        <h2 className="text2 f-22">Curated for you</h2>
+        <h3 className="text1 f-28">Master Tailors <span className="text-capsule-blue">Nearby</span></h3>
       </div>
 
       <div className="tailor-grid">
