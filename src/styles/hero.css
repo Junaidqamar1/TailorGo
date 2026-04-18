@@ -239,7 +239,34 @@
   font-size: 0.8rem;
   color: var(--tortoise-glow);
 }
+.bg-video-container {
+  width: 40vw;
+  height: 250px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  overflow: hidden; /* Clips the video to the border radius */
+  background-color: red;
+}
 
+.video-source {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video fills the area without stretching */
+}
+
+/* The Black Overlay */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ background: rgba(255, 255, 255, 0.3);
+  z-index: 1; 
+}
 .bg-img{
     position: absolute;
     right: 0px;

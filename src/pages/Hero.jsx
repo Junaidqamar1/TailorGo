@@ -2,12 +2,19 @@ import React from 'react'
 import "../styles/hero.css"
 import img1 from "../assets/img1.png"
 import img3 from "../assets/img3.png"
+// import tailorVideo from "../assets/tailorVideo.mp4"
 
 function Hero() {
     return (
         <>
             <section class="hero">
-                {/* <div class="glass-sphere"></div> */}
+               
+                {/* <div className="bg-video-container">
+                    <video autoPlay loop muted playsInline className="video-source">
+                        <source src={tailorVideo} type="video/mp4" />
+                    </video>
+                    <div className="video-overlay"></div>
+                </div> */}
                 <div className="bg-img">
                     <img src={img1} alt="" />
                 </div>
