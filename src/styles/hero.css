@@ -609,6 +609,9 @@
   .item-name {
     font-size: 17px;
   }
+.bg-img2{
+  bottom: auto;
+}
 }
 
 /* SMALL MOBILE */
@@ -629,5 +632,8 @@
 
   .item-name {
     font-size: 14px;
+  }
+  .bg-img2{
+    bottom: 60%;
   }
 }
