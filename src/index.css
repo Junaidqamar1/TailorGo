@@ -31,7 +31,21 @@
 }
 @media (max-width: 768px) {
   .f-28{
+  font-size: 24px !important;
+}
+.text-capsule-blue{
+   font-size: 24px !important;
+}
+.f-22{
+  font-size: 18px;
+}
+}
+@media (max-width: 420px) {
+    .f-28{
   font-size: 14px !important;
+}
+.text-capsule-blue{
+   font-size: 14px !important;
 }
 .f-22{
   font-size: 12px;

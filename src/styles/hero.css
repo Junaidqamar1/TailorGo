@@ -33,7 +33,7 @@
   width: 100%;
   margin: 0 auto;
   /* padding: 0 3rem; */
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   z-index: 1;
   position: relative;
 
@@ -587,6 +587,7 @@
 /* TABLET */
 @media (max-width: 768px) {
   .atelier-collection {
+    padding-top: 40px;
     padding: 60px 16px;
     gap: 30px;
   }
@@ -616,8 +617,12 @@
     min-width: 100px;
     height: 50px;
     gap: 5px;
+    padding: 40px;
+    padding-top: 25px;
   }
-
+.hero-container{
+  padding-bottom: 25px;
+}
   .product-card img {
     width: 40px;
   }
