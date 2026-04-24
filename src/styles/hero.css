@@ -589,10 +589,11 @@
   .product-grid {
     padding-left: 16px;
     padding-right: 16px;
+    width: 90%;
   }
 
   .product-card {
-    min-width: 200px;
+    min-width: 160px;
   }
 
   .product-card img {
@@ -607,14 +608,16 @@
 /* SMALL MOBILE */
 @media (max-width: 480px) {
   .product-card {
-    min-width: 120px;
+    min-width: 100px;
+    height: 50px;
+    gap: 5px;
   }
 
   .product-card img {
-    width: 44px;
+    width: 40px;
   }
 
   .item-name {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
