@@ -2,13 +2,16 @@ import React from 'react'
 import "../styles/hero.css"
 import img1 from "../assets/img1.png"
 import img3 from "../assets/img3.png"
+import tshirt from "../assets/tshirt.png"
+import shirt from "../assets/shirt.png"
+import kurta from "../assets/kurta.png"
 // import tailorVideo from "../assets/tailorVideo.mp4"
 
 function Hero() {
     return (
         <>
             <section class="hero">
-               
+
                 {/* <div className="bg-video-container">
                     <video autoPlay loop muted playsInline className="video-source">
                         <source src={tailorVideo} type="video/mp4" />
@@ -25,9 +28,9 @@ function Hero() {
                     <div class="hero-content">
                         <p class="text2 f-22">The Modern Atelier</p>
                         <h1 class="head-text">
-  Master Tailors. <br />
-  At Your <span class="text-capsule">Doorstep.</span>
-</h1>
+                            Master Tailors. <br />
+                            At Your <span class="text-capsule">Doorstep.</span>
+                        </h1>
                         <p class="text3">The first on-demand marketplace for bespoke Indian wear. Find a nearby tailor, book a home visit, and get perfectly fitted in 48 hours.</p>
 
                         <div class="action-bar">
@@ -49,14 +52,44 @@ function Hero() {
                             <button class="btn-primary-hero text5">Find Tailors</button>
                         </div>
                         <div className="hero-trust-line">
-  <p className="text3">
-    <span className="creative-badge">500+</span> Verified Masters, 
-    Starts at <span className="creative-price">₹299</span>. 
-    Book your tailor <span className="creative-now">now.</span>
-  </p>
-</div>
+                            <p className="text3">
+                                <span className="creative-badge">500+</span> Verified Masters,
+                                Starts at <span className="creative-price">₹299</span>.
+                                Book your tailor <span className="creative-now">now.</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <section className="atelier-collection">
+
+                    <h3 className="text1 f-28">What Are We <span className="text-capsule-blue">Stitching</span> Today</h3>
+                    <div className="product-grid">
+                        {/* Item 1 */}
+                        <div className="product-card">
+                            <div className="icon-box">
+                                <img src={tshirt} alt="Kurta icon" />
+                            </div>
+                            <p className="item-name">Bespoke Kurta</p>
+                        </div>
+
+                        {/* Item 2 - Active State Example */}
+                        <div className="product-card">
+                            <div className="icon-box">
+                                <img src={kurta} alt="Suit icon" />
+                            </div>
+                            <p className="item-name">Master Kurta</p>
+                        </div>
+
+                        {/* Item 3 */}
+                        <div className="product-card">
+                            <div className="icon-box">
+                                <img src={shirt} alt="Shirt icon" />
+                            </div>
+                            <p className="item-name">Custom Shirt</p>
+                        </div>
+                    </div>
+
+                </section>
             </section>
         </>
     )
