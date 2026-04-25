@@ -4,38 +4,53 @@ import "../styles/auth.css";
 
 function Login() {
   return (
-    <section className="auth">
-      <div className="auth-container">
+    <section className="auth-pro">
 
-        <div className="auth-left">
-          <h1>
-            Stitch Your <span className="highlight">Perfect Fit</span>
-          </h1>
-          <p>
-            Connect with skilled local tailors and get your outfits crafted
-            exactly the way you want — right from your home.
-          </p>
-        </div>
+      {/* TOP BRAND */}
+      <div className="auth-header">
+        <h1>
+          Tailoring, <span>Reimagined</span>
+        </h1>
+        <p>Seamless stitching. Real tailors. Delivered to your door.</p>
+      </div>
 
-        <div className="auth-right">
-          <h2>Welcome Back</h2>
+      {/* MAIN CARD */}
+      <div className="auth-layout">
+
+        {/* LEFT — CUSTOMER */}
+        <div className="auth-customer">
+
+          <h2>Login as Customer</h2>
 
           <form className="auth-form">
-            <input type="email" placeholder="Email address" required />
-            <input type="password" placeholder="Password" required />
+            <input type="email" placeholder="Email address" />
+            <input type="password" placeholder="Password" />
 
-            <button type="submit" className="auth-btn">
-              Login
-            </button>
-
-            <p className="auth-switch">
-              Don’t have an account? 
-              <Link to="/signup">Sign up</Link>
-            </p>
+            <button className="auth-btn">Continue</button>
           </form>
+
+          <p className="auth-switch">
+            New here? <Link to="/signup">Create account</Link>
+          </p>
+
+        </div>
+
+        {/* RIGHT — TAILOR CTA */}
+        <div className="auth-tailor">
+
+          <h2>Are you a Tailor?</h2>
+          <p>
+            Start receiving orders from customers near you and grow your business.
+          </p>
+
+          <Link to="/tailor-login" className="tailor-btn">
+            Become a Tailor →
+          </Link>
+
         </div>
 
       </div>
+
     </section>
   );
 }

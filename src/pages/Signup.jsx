@@ -4,20 +4,22 @@ import "../styles/auth.css";
 
 function Signup() {
   return (
-    <section className="auth">
-      <div className="auth-container">
+    <section className="auth-pro">
 
-        <div className="auth-left">
-          <h1>
-            Start Your <span className="highlight">Tailoring Journey</span>
-          </h1>
-          <p>
-            Join now and discover expert tailors near you. Custom outfits,
-            perfect fit, zero hassle.
-          </p>
-        </div>
+      {/* HEADER */}
+      <div className="auth-header">
+        <h1>
+          Start Your <span>Tailoring Journey</span>
+        </h1>
+        <p>Create your account and get perfectly stitched outfits effortlessly</p>
+      </div>
 
-        <div className="auth-right">
+      {/* MAIN */}
+      <div className="auth-layout">
+
+        {/* LEFT — SIGNUP FORM */}
+        <div className="auth-customer">
+
           <h2>Create Account</h2>
 
           <form className="auth-form">
@@ -25,17 +27,32 @@ function Signup() {
             <input type="email" placeholder="Email address" required />
             <input type="password" placeholder="Password" required />
 
-            <button type="submit" className="auth-btn">
-              Sign Up
-            </button>
-
-            <p className="auth-switch">
-              Already have an account? <Link to="/login">Login</Link>
-            </p>
+            <button className="auth-btn">Create Account</button>
           </form>
+
+          <p className="auth-switch">
+            Already have an account? <Link to="/login">Login</Link>
+          </p>
+
+        </div>
+
+        {/* RIGHT — TAILOR CTA */}
+        <div className="auth-tailor">
+
+          <h2>Join as a Tailor</h2>
+          <p>
+            Get discovered by customers near you, accept orders, and grow your
+            tailoring business with ease.
+          </p>
+
+          <Link to="/tailor-login" className="tailor-btn">
+            Become a Tailor →
+          </Link>
+
         </div>
 
       </div>
+
     </section>
   );
 }

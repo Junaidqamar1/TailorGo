@@ -1,86 +1,72 @@
-.auth {
+.auth-pro {
   min-height: 100vh;
+  padding: 60px 20px;
+  background: var(--bg-beige);
+
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--bg-beige);
-  padding: 40px 20px;
 }
 
-.auth-container {
+/* HEADER */
+.auth-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.auth-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.auth-header span {
+  color: var(--tortoise-accent);
+}
+
+.auth-header p {
+  margin-top: 10px;
+  color: #666;
+}
+
+/* LAYOUT */
+.auth-layout {
   width: 100%;
-  max-width: 1100px;
+  max-width: 900px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.2fr 1fr;
   border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(20,34,78,0.15);
+
+  box-shadow: 0 30px 80px rgba(20,34,78,0.12);
 }
 
-/* LEFT */
-.auth-left {
-  padding: 60px;
-  background: linear-gradient(
-    135deg,
-    rgba(120,170,230,0.95),
-    rgba(20,34,78,1)
-  );
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.auth-left h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  line-height: 1.2;
-}
-
-.highlight {
-  background: linear-gradient(135deg, #fff, #dbe6ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.auth-left p {
-  opacity: 0.85;
-  line-height: 1.6;
-}
-
-/* RIGHT */
-.auth-right {
+/* CUSTOMER SIDE */
+.auth-customer {
   background: white;
-  padding: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 40px;
 }
 
-.auth-right h2 {
-  margin-bottom: 30px;
-  color: #1a1a1a;
+.auth-customer h2 {
+  margin-bottom: 20px;
 }
 
 /* FORM */
 .auth-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 14px;
 }
 
 .auth-form input {
-  padding: 14px 16px;
+  padding: 14px;
   border-radius: 12px;
   border: 1px solid #ddd;
   outline: none;
-  font-size: 0.95rem;
-  transition: 0.3s;
 }
 
 .auth-form input:focus {
   border-color: var(--tortoise-accent);
-  box-shadow: 0 0 0 3px rgba(120,170,230,0.2);
 }
 
 /* BUTTON */
@@ -89,43 +75,114 @@
   padding: 14px;
   border-radius: 12px;
   border: none;
-  background: linear-gradient(135deg, #14224e, #3b5fa0);
+
+  background: linear-gradient(
+    135deg,
+    var(--tortoise-accent),
+    var(--tortoise-glow)
+  );
+
   color: white;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.3s;
-}
-
-.auth-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(20,34,78,0.3);
 }
 
 /* SWITCH */
 .auth-switch {
   margin-top: 15px;
   font-size: 0.9rem;
-  text-align: center;
 }
 
 .auth-switch a {
   color: var(--tortoise-accent);
   font-weight: 600;
-  text-decoration: none;
 }
 
+/* 🔥 TAILOR SIDE */
+.auth-tailor {
+  padding: 40px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(120,170,230,0.95),
+    rgba(20,34,78,1)
+  );
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-tailor h2 {
+  margin-bottom: 10px;
+}
+
+.auth-tailor p {
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+
+.tailor-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 10px;
+
+  background: white;
+  color: var(--tortoise-accent);
+  font-weight: 600;
+
+  text-decoration: none;
+  width: fit-content;
+
+  transition: 0.3s;
+}
+
+.tailor-btn:hover {
+  transform: translateY(-2px);
+}
+/* Slight variation for signup feel */
+.auth-pro .auth-header h1 span {
+  background: linear-gradient(
+    135deg,
+    var(--tortoise-accent),
+    var(--tortoise-glow)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Slightly softer form feel */
+.auth-customer {
+  position: relative;
+}
+
+.auth-customer::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: var(--premium-glow);
+  filter: blur(60px);
+  top: -50px;
+  right: -50px;
+  z-index: 0;
+}
+
+.auth-form,
+.auth-customer h2,
+.auth-switch {
+  position: relative;
+  z-index: 1;
+}
 /* MOBILE */
 @media (max-width: 768px) {
-  .auth-container {
+  .auth-layout {
     grid-template-columns: 1fr;
   }
 
-  .auth-left {
-    padding: 40px 20px;
+  .auth-tailor {
     text-align: center;
-  }
-
-  .auth-right {
-    padding: 30px 20px;
   }
 }
