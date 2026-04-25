@@ -1,6 +1,7 @@
 import React from 'react'
 import "../styles/nav.css"
 import logo from "../assets/logo.png"
+import { Link } from 'react-router-dom'
 function Nav() {
 //   const toggle = document.querySelector(".menu-toggle");
 // const nav = document.querySelector(".nav-links");
@@ -25,7 +26,7 @@ function Nav() {
 
     <div class="nav-actions">
       <a href="#" class="btn-secondary">Partner Login</a>
-      <a href="#" class="btn-primary">Book Now</a>
+      <Link to="/login" class="btn-primary">Book Now</Link>
     </div>
   </div>
 </nav>

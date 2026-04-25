@@ -1,0 +1,131 @@
+.auth {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-beige);
+  padding: 40px 20px;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(20,34,78,0.15);
+}
+
+/* LEFT */
+.auth-left {
+  padding: 60px;
+  background: linear-gradient(
+    135deg,
+    rgba(120,170,230,0.95),
+    rgba(20,34,78,1)
+  );
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.highlight {
+  background: linear-gradient(135deg, #fff, #dbe6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.auth-left p {
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* RIGHT */
+.auth-right {
+  background: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-right h2 {
+  margin-bottom: 30px;
+  color: #1a1a1a;
+}
+
+/* FORM */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-form input {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.auth-form input:focus {
+  border-color: var(--tortoise-accent);
+  box-shadow: 0 0 0 3px rgba(120,170,230,0.2);
+}
+
+/* BUTTON */
+.auth-btn {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #14224e, #3b5fa0);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(20,34,78,0.3);
+}
+
+/* SWITCH */
+.auth-switch {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.auth-switch a {
+  color: var(--tortoise-accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .auth-container {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-left {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .auth-right {
+    padding: 30px 20px;
+  }
+}
