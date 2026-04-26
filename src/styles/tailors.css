@@ -182,7 +182,7 @@
 }
 
 .book-btn {
-  width: 100%;
+  /* width: 100%; */
   background: var(--text-obsidian);
   color: white;
   border-radius: 100px;
@@ -194,6 +194,7 @@
   border: none;
   transition: all 0.3s ease;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .book-btn:hover {
@@ -369,6 +370,7 @@
 
   .book-btn {
     padding: 0.8rem;
+    
   }  
 
   .master-card::after {

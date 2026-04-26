@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/tailors.css';
+import { Link } from 'react-router-dom';
 
 const tailors = [
   { id: 1, name: "Master Ibrahim", exp: "22 Yrs Exp", rating: "4.9", tags: ["Sherwani", "Suits"], img: "https://plus.unsplash.com/premium_photo-1683140721927-aaed410fae29?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
@@ -35,10 +36,10 @@ function TailorSection() {
                 {t.tags.map(tag => <span key={tag} className="skill-tag text6">{tag}</span>)}
               </div>
 
-              <button className="book-btn">
+              <Link className="book-btn" to={"/tailor-profile"}>
                 <span className="text5">Book Appointment</span>
                 <div className="btn-icon">→</div>
-              </button>
+              </Link>
             </div>
           </div>
         ))}

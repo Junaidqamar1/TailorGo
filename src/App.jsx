@@ -9,6 +9,7 @@ import Trust from "./pages/Trust";
 import Footer from "./pages/Footer";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import TailorProfile from "./pages/TailorProfile";
 
 function Home() {
   return (
@@ -33,6 +34,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/tailor-profile" element={<TailorProfile />} />
     </Routes>
   );
 }

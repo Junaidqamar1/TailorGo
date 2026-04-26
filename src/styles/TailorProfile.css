@@ -1,0 +1,332 @@
+/* Layout Architecture */
+.container-split {
+  display: flex;
+  gap: 3rem;
+  padding: 120px 2rem;
+}
+
+.data-column { flex: 2; }
+.sticky-cta { flex: 1; position: sticky; top: 100px; height: fit-content; }
+
+/* The Identity Card */
+.identity-card {
+  padding: 3rem;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.7);
+  margin-bottom: 3rem;
+}
+
+.id-top { display: flex; gap: 2rem; align-items: center; }
+.pro-avatar { width: 120px; height: 120px; border-radius: 30px; object-fit: cover; }
+
+.badge-row { display: flex; gap: 10px; margin-bottom: 10px; }
+.pill-blue { background: var(--tortoise-glow); color: #fff; padding: 4px 12px; border-radius: 100px; font-size: 0.75rem; font-weight: 700; }
+.pill-location { background: #eee; padding: 4px 12px; border-radius: 100px; font-size: 0.75rem; }
+
+.id-stats { 
+  display: flex; 
+  justify-content: space-between; 
+  margin-top: 2.5rem; 
+  padding-top: 2rem; 
+  border-top: 1px solid rgba(0,0,0,0.05); 
+}
+
+/* Service Menu - The most important part */
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.service-item {
+  padding: 1.5rem;
+  border-radius: 30px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.02);
+  display: flex;
+  gap: 1rem;
+}
+
+.service-img-mini { width: 60px; height: 60px; background: var(--bg-beige); border-radius: 15px; }
+
+.price-row { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin-top: 10px; 
+  font-size: 0.85rem; 
+}
+
+.add-btn { 
+  background: var(--text-obsidian); 
+  color: #fff; 
+  border: none; 
+  width: 28px; 
+  height: 28px; 
+  border-radius: 8px; 
+  cursor: pointer; 
+}
+
+/* Dark Sticky Card */
+.glass-dark {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 3rem;
+  border-radius: 40px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+}
+
+.main-cta-btn {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 100px;
+  background: var(--tortoise-glow);
+  color: #fff;
+  border: none;
+  font-weight: 800;
+  margin: 1.5rem 0;
+  cursor: pointer;
+}
+/* --- LUXURY OVERRIDES --- */
+
+.profile-page-v2 {
+  background-color: var(--bg-beige);
+  font-family: var(--font-body);
+  color: var(--text-obsidian);
+  background-image: var(--premium-glow); /* Soft background radial */
+  overflow-x: hidden;
+}
+
+/* 1. IDENTITY CARD UPGRADE */
+.identity-card {
+  padding: 3.5rem;
+  border-radius: 40px;
+  background: var(--white);
+  border: 1px solid rgba(120, 170, 230, 0.2); /* Soft Blue Border */
+  position: relative;
+  overflow: hidden;
+}
+
+/* The 'Aura' behind the tailor */
+.identity-card::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(120, 170, 230, 0.15) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.pro-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 35px;
+  object-fit: cover;
+  border: 5px solid var(--white);
+  box-shadow: 0 20px 40px rgba(20, 34, 78, 0.15); /* Indigo Shadow */
+  z-index: 1;
+  position: relative;
+}
+
+/* .text1 {
+  font-family: var(--font-heading);
+  letter-spacing: -2px;
+  font-weight: 800;
+  color: var(--tortoise-accent); 
+} */
+
+.id-info p {
+  font-family: var(--font-accent); /* Fraunces Luxury */
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+/* 2. HIGHLIGHTED SERVICE MENU */
+.service-item {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1.5px solid transparent;
+  background: var(--white);
+}
+
+.service-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--tortoise-glow);
+  box-shadow: 0 25px 50px rgba(20, 34, 78, 0.08);
+}
+
+.service-item h4 {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.price-row b {
+  color: var(--tortoise-accent);
+  font-family: var(--font-action);
+  font-size: 1.1rem;
+}
+
+/* 3. THE ADD BUTTON (Lexend for Action) */
+.add-btn {
+  background: var(--tortoise-accent);
+  font-family: var(--font-action);
+  transition: 0.3s ease;
+}
+
+.add-btn:hover {
+  background: var(--tortoise-glow);
+  transform: rotate(90deg);
+}
+
+/* 4. THE DARK BOOKING CARD (Sticky Side) */
+.glass-dark {
+  background: var(--tortoise-accent); /* Deep Indigo */
+  color: var(--white);
+  border: 1px solid rgba(120, 170, 230, 0.3);
+  position: fixed;
+}
+
+/* Subtle Stitching Line Effect */
+.glass-dark::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 1px dashed rgba(120, 170, 230, 0.4);
+  border-radius: 30px;
+  pointer-events: none;
+}
+
+.main-cta-btn {
+  background: var(--tortoise-glow); /* Soft Blue Glow */
+  font-family: var(--font-action);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 15px 30px rgba(120, 170, 230, 0.4);
+  transition: 0.4s ease;
+}
+
+.main-cta-btn:hover {
+  background: var(--white);
+  color: var(--tortoise-accent);
+  transform: translateY(-3px);
+}
+
+/* 5. REVIEW UPGRADE */
+.review-pill {
+  border-left: 4px solid var(--tortoise-glow);
+  background: var(--white);
+  padding: 2rem;
+  margin-top: 1.5rem;
+}
+
+.stars {
+  color: #FFC107; /* Gold for quality */
+  letter-spacing: 3px;
+}
+.mobile-action-bar{
+    display: none;
+}
+/* --- RESPONSIVE ARCHITECTURE --- */
+
+@media (max-width: 1024px) {
+  .container-split {
+    flex-direction: column; /* Stack columns vertically */
+    gap: 2rem;
+    padding: 100px 1.5rem;
+  }
+
+  .data-column, .sticky-cta {
+    width: 100%;
+    flex: none;
+  }
+
+  .sticky-cta {
+    position: static; /* Remove stickiness for tablet */
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr; /* Single column services */
+  }
+}
+
+@media (max-width: 768px) {
+  /* IDENTITY CARD MOBILE */
+  .identity-card {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .id-top {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .badge-row {
+    justify-content: center;
+  }
+
+  .id-stats {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .stat-block {
+    flex: 1 1 40%; /* Two stats per row on mobile */
+  }
+
+  /* HIDE DESKTOP SIDEBAR ON SMALL PHONES */
+  .sticky-cta {
+    display: none; 
+  }
+
+  /* SHOW MOBILE BOTTOM BAR */
+  .mobile-action-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    padding: 1rem 1.5rem;
+    border-top: 1px solid rgba(120, 170, 230, 0.2);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 -10px 30px rgba(0,0,0,0.05);
+  }
+
+  .main-cta-btn-sm {
+    background: var(--tortoise-accent);
+    color: var(--white);
+    font-family: var(--font-action);
+    padding: 0.8rem 2rem;
+    border-radius: 100px;
+    border: none;
+    font-weight: 700;
+  }
+  
+  /* PADDING FOR CONTENT TO NOT BE HIDDEN BY BAR */
+  .profile-page-v2 {
+    padding-bottom: 80px;
+  }
+}
+
+/* --- TEXT SCALING FOR MOBILE --- */
+@media (max-width: 480px) {
+  .text1 {
+    font-size: 2.2rem; /* Scaled down Syne heading */
+  }
+  
+  .service-item {
+    padding: 1rem;
+    border-radius: 20px;
+  }
+}
