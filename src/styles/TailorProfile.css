@@ -5,7 +5,12 @@
   padding: 120px 2rem;
 }
 
-.data-column { flex: 2; }
+.data-column { 
+    flex: 2; 
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 .sticky-cta { flex: 1; position: sticky; top: 100px; height: fit-content; }
 
 /* The Identity Card */
@@ -13,7 +18,7 @@
   padding: 3rem;
   border-radius: 40px;
   background: rgba(255, 255, 255, 0.7);
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 
 .id-top { display: flex; gap: 2rem; align-items: center; }
@@ -88,7 +93,7 @@
   margin: 1.5rem 0;
   cursor: pointer;
 }
-/* --- LUXURY OVERRIDES --- */
+
 
 .profile-page-v2 {
   background-color: var(--bg-beige);
@@ -96,6 +101,7 @@
   color: var(--text-obsidian);
   background-image: var(--premium-glow); /* Soft background radial */
   overflow-x: hidden;
+
 }
 
 /* 1. IDENTITY CARD UPGRADE */
@@ -189,6 +195,7 @@
   color: var(--white);
   border: 1px solid rgba(120, 170, 230, 0.3);
   position: fixed;
+  margin-right: 10px;
 }
 
 /* Subtle Stitching Line Effect */

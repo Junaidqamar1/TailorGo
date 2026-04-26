@@ -14,9 +14,9 @@ const TailorProfile = () => {
         <div className="profile-page-v2 bg-beige">
             <div className="max-w container-split">
 
-                {/* DATA COLUMN (Left) */}
+                
                 <div className="data-column">
-                    {/* 1. IDENTITY HEADER */}
+        
                     <section className="identity-card glass">
                         <div className="id-top">
                             <img src="/tailor-photo.jpg" className="pro-avatar" alt="Master" />
@@ -36,14 +36,15 @@ const TailorProfile = () => {
                         </div>
                     </section>
 
-                    {/* 2. THE SERVICE MENU (The "Useless-to-Useful" Fix) */}
+
                     <section className="service-menu">
-                        <h2 className="text4">Services & Transparent Pricing</h2>
+                         <h2 className="text1 f-28">Services & Transparent <span className="text-capsule-blue"> Pricing</span></h2>
+                        {/* <h2 className="text4">Services & Transparent Pricing</h2> */}
                         <div className="service-grid">
                             {tailorServices.map(service => (
                                 <div key={service.id} className="service-item glass-white">
                                     <div className="service-img-mini"></div>
-                                    <div className="service-details">
+                                    <div className="service-details text6">
                                         <h4>{service.name}</h4>
                                         <p className="text6">Delivery: {service.time}</p>
                                         <div className="price-row">
@@ -58,7 +59,8 @@ const TailorProfile = () => {
 
                     {/* 3. REVIEWS SECTION */}
                     <section className="reviews-hub">
-                        <h2 className="text4">What Clients Say</h2>
+                         <h2 className="text1 f-28">What Clients <span className="text-capsule-blue"> Say</span></h2>
+                        {/* <h2 className="text4">What Clients Say</h2> */}
                         <div className="review-pill glass-white">
                             <div className="rev-top">
                                 <b>Sara J.</b> <span className="stars">⭐⭐⭐⭐⭐</span>
@@ -68,7 +70,6 @@ const TailorProfile = () => {
                     </section>
                 </div>
 
-                {/* STICKY CTA COLUMN (Right) */}
                 <aside className="sticky-cta">
                     <div className="booking-summary glass-dark">
                         <h3 className="text4 white">Secure Your Slot</h3>
