@@ -14,6 +14,8 @@ import Signup from "./pages/Signup";
 import TailorProfile from "./pages/TailorProfile";
 import TailorLogin from "./pages/TailorLogin";
 import TailorSignup from "./pages/TailorSignup";
+import Booking from "./pages/Booking";
+import HowItWorks from "./pages/HowItWorks";
 
 function Home() {
   return (
@@ -39,6 +41,8 @@ function App() {
           <Route path="/tailor-profile" element={<TailorProfile />} />
           <Route path="/tailor-login" element={<TailorLogin />} />
           <Route path="/tailor-signup" element={<TailorSignup />} />
+          <Route path="/booking" element={<Booking />} />
+          <Route path="/HIW" element={<HowItWorks />} />
         </Routes>
       </div>
 

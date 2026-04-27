@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "../styles/nav.css"
 import logo from "../assets/logo.png"
 import { Link } from 'react-router-dom'
+// import HIW from './HIW';
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,7 +26,7 @@ function Nav() {
         {/* NAV LINKS */}
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
         {/* <ul className="nav-links"> */}
-          <li><a href="#how-it-works" onClick={() => setMenuOpen(false)}>How it Works</a></li>
+          <li><Link to="/HIW" >How it Works</Link></li>
           <li><a href="#find-tailors" onClick={() => setMenuOpen(false)}>Find Tailors</a></li>
           <li><a href="#pricing" onClick={() => setMenuOpen(false)}>Pricing</a></li>
           <Link to="/tailor-signup" className="btn-secondary mob-btn">Partner Login</Link>
