@@ -1,35 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../styles/nav.css"
 import logo from "../assets/logo.png"
 import { Link } from 'react-router-dom'
+
 function Nav() {
-//   const toggle = document.querySelector(".menu-toggle");
-// const nav = document.querySelector(".nav-links");
+  const [menuOpen, setMenuOpen] = useState(false);
 
-// toggle.addEventListener("click", () => {
-//   nav.classList.toggle("active");
-// });
   return (
-<nav class="navbar">
-  <div class="nav-container max-w">
-    <Link to="/" class="logo">
-      {/* <span class="logo-text">Tailor<span>Go</span></span> */}
-      <img src={logo} alt="" />
-    </Link>
-    <div class="menu-toggle">☰</div>
+    <nav className="navbar">
+      <div className="nav-container max-w">
 
-    <ul class="nav-links">
-      <li><a href="#how-it-works">How it Works</a></li>
-      <li><a href="#find-tailors">Find Tailors</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-    </ul>
+        <Link to="/" className="logo">
+          <img src={logo} alt="logo" />
+        </Link>
 
-    <div class="nav-actions">
-      <Link to="/tailor-signup" class="btn-secondary">Partner Login</Link>
-      <Link to="/login" class="btn-primary">Book Now</Link>
-    </div>
-  </div>
-</nav>
+        {/* TOGGLE BUTTON */}
+        <div 
+          className="menu-toggle"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          ☰
+        </div>
+
+        {/* NAV LINKS */}
+        <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+          <li><a href="#how-it-works" onClick={() => setMenuOpen(false)}>How it Works</a></li>
+          <li><a href="#find-tailors" onClick={() => setMenuOpen(false)}>Find Tailors</a></li>
+          <li><a href="#pricing" onClick={() => setMenuOpen(false)}>Pricing</a></li>
+        </ul>
+
+        {/* ACTIONS */}
+        <div className="nav-actions">
+          <Link to="/tailor-signup" className="btn-secondary">Partner Login</Link>
+          <Link to="/login" className="btn-primary">Book Now</Link>
+        </div>
+
+      </div>
+    </nav>
   )
 }
 
