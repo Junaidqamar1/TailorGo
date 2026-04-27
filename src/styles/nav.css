@@ -7,6 +7,7 @@
   -webkit-backdrop-filter: blur(0px);
   border-bottom: 1px solid transparent;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 
 .navbar.scrolled {
@@ -114,9 +115,18 @@
   font-size: 1.6rem;
   cursor: pointer;
 }
+.mob-btn{
+  display: none;
+}
+.btn-primary.mob-btn{
+  color: var(--white);
+}
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
+  .mob-btn{
+    display:block;
+  }
   .nav-links {
     position: absolute;
     top: 100%;
@@ -152,15 +162,4 @@
     height: 60px;
     object-fit: cover;
   }
-}
-/* .nav-links {
-  transform: translateY(-120%);
-  opacity: 0;
-  pointer-events: none;
-} */
-
-.nav-links.active {
-  transform: translateY(0);
-  opacity: 1;
-  pointer-events: auto;
 }

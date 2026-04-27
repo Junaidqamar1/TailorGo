@@ -120,7 +120,7 @@ function Signup() {
               <div className="tailor-perk">✓ Manage orders from your phone</div>
             </div>
 
-            <Link to="/tailor-singup" className="tailor-btn">
+            <Link to="/tailor-signup" className="tailor-btn">
               Join as a Tailor →
             </Link>
 
