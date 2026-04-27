@@ -12,10 +12,10 @@ function Nav() {
   return (
 <nav class="navbar">
   <div class="nav-container max-w">
-    <div class="logo">
+    <Link to="/" class="logo">
       {/* <span class="logo-text">Tailor<span>Go</span></span> */}
       <img src={logo} alt="" />
-    </div>
+    </Link>
     <div class="menu-toggle">☰</div>
 
     <ul class="nav-links">
@@ -25,7 +25,7 @@ function Nav() {
     </ul>
 
     <div class="nav-actions">
-      <a href="#" class="btn-secondary">Partner Login</a>
+      <Link to="/tailor-signup" class="btn-secondary">Partner Login</Link>
       <Link to="/login" class="btn-primary">Book Now</Link>
     </div>
   </div>

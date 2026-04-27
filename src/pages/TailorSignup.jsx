@@ -3,61 +3,45 @@ import { Link } from "react-router-dom";
 import "../styles/auth.css";
 import tailorVideo from "../assets/tailorVideo.mp4";
 
-function Signup() {
+function TailorSignup() {
   return (
     <section className="auth-pro">
 
       {/* HEADER */}
       <div className="auth-header font1">
-        <div className="auth-eyebrow font1">✦ Trusted by 10,000+ customers across India</div>
-        <h2 className="text1 f-28">Your Perfect Fit  <span className="text-capsule-blue">Starts Here</span>
+        <div className="auth-eyebrow font1">✦ Join 500+ verified tailors across India</div>
+        <h2 className="text1 f-28">
+          Grow Your <span className="text-capsule-blue">Tailoring Business</span>
         </h2>
-        <p>Get perfectly stitched outfits delivered to your door in 48 hours</p>
+        <p>Get more orders, reach new customers, and manage everything in one place</p>
       </div>
 
-      {/* TRUST BADGES */}
-      {/* <div className="auth-trust-row">
-        <div className="trust-badge">
-          <span className="trust-icon">🔒</span>
-          <span>100% Secure</span>
-        </div>
-        <div className="trust-divider" />
-        <div className="trust-badge">
-          <span className="trust-icon">⭐</span>
-          <span>4.9 Rated Service</span>
-        </div>
-        <div className="trust-divider" />
-        <div className="trust-badge">
-          <span className="trust-icon">🪡</span>
-          <span>500+ Verified Masters</span>
-        </div>
-        <div className="trust-divider" />
-        <div className="trust-badge">
-          <span className="trust-icon">🚀</span>
-          <span>48hr Delivery</span>
-        </div>
-      </div> */}
-
-      {/* MAIN CARD */}
       <div className="auth-layout">
 
         {/* LEFT — FORM */}
         <div className="auth-customer">
 
           <div className="auth-form-header">
-            <h2>Create Your Account</h2>
-            <p>Join free — no subscription needed</p>
+            <h2>Create Tailor Account</h2>
+            <p>Start receiving orders in minutes</p>
           </div>
 
           <form className="auth-form">
             <div className="input-group">
               <label>Full Name</label>
-              <input type="text" placeholder="e.g. Arjun Sharma" required />
+              <input type="text" placeholder="e.g. Ramesh Tailor" required />
             </div>
+
+            <div className="input-group">
+              <label>Shop Name</label>
+              <input type="text" placeholder="e.g. Ramesh Tailoring House" required />
+            </div>
+
             <div className="input-group">
               <label>Email Address</label>
               <input type="email" placeholder="you@email.com" required />
             </div>
+
             <div className="input-group">
               <label>Password</label>
               <input type="password" placeholder="Min. 8 characters" required />
@@ -66,12 +50,12 @@ function Signup() {
             <div className="auth-agree">
               <input type="checkbox" id="agree" />
               <label htmlFor="agree">
-                I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a>
               </label>
             </div>
 
             <button className="auth-btn" type="submit">
-              Create Free Account →
+              Create Tailor Account →
             </button>
           </form>
 
@@ -86,20 +70,18 @@ function Signup() {
               <path d="M3.964 10.71A5.41 5.41 0 013.682 9c0-.593.102-1.17.282-1.71V4.958H.957A8.996 8.996 0 000 9c0 1.452.348 2.827.957 4.042l3.007-2.332z" fill="#FBBC05"/>
               <path d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 00.957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z" fill="#EA4335"/>
             </svg>
-            Continue with Google
-          </button>
+            Continue with Google</button>
 
           <p className="auth-switch">
-            Already have an account? <Link to="/login">Sign in →</Link>
+            Already a tailor? <Link to="/tailor-login">Sign in →</Link>
           </p>
 
-          {/* MINI TRUST */}
           <div className="auth-mini-trust">
-            <span>🔒 Your data is encrypted and never sold</span>
+            <span>🪡 No upfront fees — start earning immediately</span>
           </div>
         </div>
 
-        {/* RIGHT — VIDEO + CTA */}
+        {/* RIGHT — VIDEO + BENEFITS */}
         <div className="auth-tailor">
           <video autoPlay loop muted playsInline className="video-source">
             <source src={tailorVideo} type="video/mp4" />
@@ -107,30 +89,17 @@ function Signup() {
           <div className="video-overlay" />
 
           <div className="tailor-content">
-            <div className="tailor-eyebrow">For Professionals</div>
-            <h2>Are You a Master Tailor?</h2>
-            <p>
-              Join 500+ verified tailors already earning more on TailorGo.
-              Get discovered by customers near you and grow your business — on your own schedule.
-            </p>
+            <div className="tailor-eyebrow">Why Join?</div>
+            <h2>Get More Customers</h2>
 
             <div className="tailor-perks">
-              <div className="tailor-perk">✓ Free to join, no commission upfront</div>
-              <div className="tailor-perk">✓ Verified badge builds customer trust</div>
-              <div className="tailor-perk">✓ Manage orders from your phone</div>
+              <div className="tailor-perk">✓ Receive orders from nearby customers</div>
+              <div className="tailor-perk">✓ Build trust with verified badge</div>
+              <div className="tailor-perk">✓ Manage work easily from phone</div>
             </div>
 
-            <Link to="/tailor-singup" className="tailor-btn">
-              Join as a Tailor →
-            </Link>
-
             <div className="tailor-social-proof">
-              <div className="tailor-avatars">
-                <div className="t-av" style={{background:"#a8c4e0"}}>R</div>
-                <div className="t-av" style={{background:"#b0d4b8"}}>S</div>
-                <div className="t-av" style={{background:"#e0c4a8"}}>M</div>
-              </div>
-              <span>Ibrahim, Savita & 498 others joined this month</span>
+              <span>500+ tailors already growing their business</span>
             </div>
           </div>
         </div>
@@ -140,4 +109,4 @@ function Signup() {
   );
 }
 
-export default Signup;
+export default TailorSignup;
