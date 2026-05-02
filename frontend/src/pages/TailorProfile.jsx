@@ -65,9 +65,7 @@ function ProfileSkeleton() {
   );
 }
 
-/* ══════════════════════════════════
-   MAIN COMPONENT
-   ══════════════════════════════════ */
+
 export default function TailorProfile() {
   const { username }  = useParams(); // route: /tailor/:username
   const navigate      = useNavigate();
@@ -89,7 +87,7 @@ export default function TailorProfile() {
     setError('');
     try {
       const res  = await fetch(
-        `http://localhost:5000/api/v1/tailor/profile/${username}`,
+        `https://api.tailorgo.in/api/v1/tailor/profile/${username}`,
         { credentials: 'include' }
       );
       const data = await res.json();
