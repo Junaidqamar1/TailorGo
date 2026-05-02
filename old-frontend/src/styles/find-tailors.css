@@ -1,0 +1,140 @@
+.find-page {
+  background: var(--bg-beige);
+  min-height: 100vh;
+  padding-top: 100px; /* Space for Nav */
+}
+
+/* 1. DISCOVERY HEADER */
+.discovery-header {
+  background: var(--white);
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.blue-glow-text {
+  color: var(--tortoise-glow);
+  font-family: var(--font-accent);
+}
+
+/* 2. LAYOUT ENGINE */
+.main-discovery-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2.5rem;
+  padding-bottom: 5rem;
+}
+
+/* 3. FILTER SIDEBAR (Dense Info) */
+.filter-sidebar {
+  height: fit-content;
+  position: sticky;
+  top: 120px;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: 30px;
+}
+
+.filter-group {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--bg-beige);
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.apply-filter-btn {
+  width: 100%;
+  background: var(--tortoise-accent);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 15px;
+  font-family: var(--font-action);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* 4. TAILOR CARDS (The Craft Look) */
+.tailor-results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.tailor-master-card {
+  background: var(--white);
+  border-radius: 35px;
+  overflow: hidden;
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(0,0,0,0.02);
+}
+
+.tailor-master-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 60px rgba(20, 34, 78, 0.1);
+}
+
+.card-image-wrapper {
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image-wrapper img {
+  width: 100%; height: 100%; object-fit: cover;
+}
+
+.dist-tag {
+  position: absolute;
+  top: 15px; left: 15px;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(5px);
+  padding: 5px 12px;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.card-details {
+  padding: 1.8rem;
+}
+
+.card-top-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.specialty-pill {
+  color: var(--tortoise-glow);
+  font-family: var(--font-action);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.view-profile-cta {
+  background: var(--bg-beige);
+  border: none;
+  padding: 8px 18px;
+  border-radius: 12px;
+  font-family: var(--font-action);
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-profile-cta:hover {
+  background: var(--tortoise-accent);
+  color: white;
+}
