@@ -527,3 +527,6 @@
   .order-hero h1   { font-size: 20px; }
   .order-status.large { font-size: 11px; padding: 6px 14px; }
 }
+.order-list{
+    padding: 0px 15px;
+}
