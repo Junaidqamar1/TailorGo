@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { bookingApi } from "../lib/api";
 import { useAuth } from "../context/useAuth";
+import "../styles/orderDetails.css";
 import {
   formatDate,
   formatMoney,

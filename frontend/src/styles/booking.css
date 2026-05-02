@@ -617,7 +617,7 @@
 
   .bp-layout {
     grid-template-columns: 1fr;
-    padding: 20px 14px 60px;
+    padding: 20px 14px 50px;
     gap: 20px;
   }
 
@@ -697,7 +697,7 @@
 .bp-layout {
   max-width: 1060px;
   margin: 0 auto;
-  padding: 32px 24px 80px;
+  padding: 32px 24px 50px;
   display: grid;
   grid-template-columns: 1fr 300px;
   gap: 24px;
@@ -1259,7 +1259,7 @@
 
 /* ── MOBILE ── */
 @media (max-width: 860px) {
-  .bp-layout { grid-template-columns: 1fr; padding: 16px 14px 60px; }
+  .bp-layout { grid-template-columns: 1fr; padding: 16px 14px 30px; }
   .bp-sidebar { position: static; }
   .bp-topbar  { padding: 0 16px; }
   .bp-card    { padding: 20px 16px; }

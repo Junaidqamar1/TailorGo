@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { bookingApi } from "../lib/api";
+import "../styles/orderDetails.css";
 import {
   formatDate,
   formatMoney,
