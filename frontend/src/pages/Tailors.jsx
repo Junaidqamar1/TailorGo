@@ -108,7 +108,7 @@ function TailorSection() {
 
         try {
           const res = await fetch(
-            `http://localhost:5000/api/v1/tailor/nearby?lat=${latitude}&lng=${longitude}&radius=10`,
+            `https://api.tailorgo.in/api/v1/tailor/nearby?lat=${latitude}&lng=${longitude}&radius=10`,
             { credentials: 'include' }
           );
 
