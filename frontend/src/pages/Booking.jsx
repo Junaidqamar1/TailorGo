@@ -121,7 +121,7 @@ export default function Booking() {
     referenceImages.forEach(f => fd.append("referenceImages", f));
 
     try {
-      const res  = await fetch("http://localhost:5000/api/v1/booking/orders", {
+      const res  = await fetch("https://api.tailorgo.in/api/v1/booking/orders", {
         method: "POST",
         credentials: "include",
         body: fd,
