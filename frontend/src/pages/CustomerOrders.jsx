@@ -11,7 +11,7 @@ import {
   ORDER_STATUS_TONES,
   shortId,
 } from "../lib/orderUtils";
-import "../styles/booking.css";
+// import "../styles/booking.css";
 
 export default function CustomerOrders() {
   const [orders, setOrders] = useState([]);
